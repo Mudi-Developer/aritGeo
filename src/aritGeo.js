@@ -9,13 +9,11 @@
       let val;      
 
       if (arr.length == 0) return 0; // case of array is empty
-      if (typeof arr === 'boolean') return 'this is boolean';
-      if (typeof arr === 'string') return 'string input is invalid';
-      if (arr === Infinity) val = 'undefined';      
-      if (typeof arr === 'function') val = 'function input is invalid';
-      
-      if (arr%2 == 0) val = 'even integer';
-      if (arr%2 == 1) val = 'odd integer';
+      if (typeof arr === 'boolean') return 'this is boolean'; //case of boolean inputs
+      if (typeof arr === 'string') return 'string input is invalid'; // case of string inputs
+      if (arr === Infinity) val = 'undefined'; // case of undefined input       
+      if (arr%2 == 0) val = 'even integer'; // case of even integer input
+      if (arr%2 == 1) val = 'odd integer';  // case of odd integer input
       
       
 
