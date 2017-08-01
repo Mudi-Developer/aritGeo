@@ -6,31 +6,23 @@ describe('aritGeo([])', () =>{
 		assert.equal(aritGeo([]), 0)
 	});
 
-	it('It should return 0', () =>{		
-		assert.equal(aritGeo('stringValue'), 0)
+	it('String', () =>{		
+		assert.equal(aritGeo('stringValue'), 'string input is invalid')
 	});
 
-	it('It should return 0', () =>{		
-		assert.equal(aritGeo(true), 'boolean')
-	});
+	it('boolean', () =>{		
+		assert.equal(aritGeo(true), 'this is boolean')
+	});	
 
-	it('It should return 0', () =>{		
-		assert.equal(aritGeo(5), 'number')
-	});
+	it('undefined', () =>{		
+		assert.equal(aritGeo(5 / 0), 'undefined')
+	});	
 
-	it('It should return 0', () =>{		
-		assert.equal(aritGeo(5 / 0), 'undefined array')
-	});
-
-	it('It should return 0', () =>{		
-		assert.equal(aritGeo(), 'null array')
-	});
-
-	it('It should return 0', () =>{		
+	it('odd integer', () =>{		
 		assert.equal(aritGeo(3), 'odd integer')
 	});
 
-	it('It should return 0', () =>{		
+	it('even integer', () =>{		
 		assert.equal(aritGeo(4), 'even integer')
 	});
 
